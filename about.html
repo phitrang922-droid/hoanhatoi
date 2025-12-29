@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resal.F - Giới Thiệu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero-mini {
+            height: 40vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/hero_background_1766367898014.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-bottom: 4rem;
+        }
+
+        .hero-mini h1 {
+            font-size: 3rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Resal.F</div>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Trang chủ</a>
+            <a href="about.html" class="active">Giới thiệu</a>
+            <a href="index.html#products">Sản phẩm</a>
+            <a href="index.html#styles">Kiểu bó</a>
+            <a href="order.html">Đặt hàng</a>
+            <a href="contact.html">Liên hệ</a>
+        </div>
+        <div class="navbar-right">
+            <div class="login-icon" id="login-icon" title="Đăng nhập">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                    <polyline points="10 17 15 12 10 7"></polyline>
+                    <line x1="15" y1="12" x2="3" y2="12"></line>
+                </svg>
+            </div>
+            <div class="cart-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal placeholders to avoid script errors if they expect them -->
+    <div id="login-modal" class="login-modal">
+        <div class="login-modal-content"><span id="login-close" class="login-close">&times;</span></div>
+    </div>
+    <div id="signup-modal" class="login-modal">
+        <div class="login-modal-content"><span id="signup-close" class="login-close">&times;</span></div>
+    </div>
+
+
+    <header class="hero-mini">
+        <h1>Về Chúng Tôi</h1>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="images/about_us.png" alt="Resal.F Flower Shop">
+                </div>
+                <div class="about-content">
+                    <h2>Về Resal.F</h2>
+                    <p class="about-subtitle">Nơi cảm xúc thăng hoa cùng vẻ đẹp thiên nhiên</p>
+                    <p>Chào mừng bạn đến với Resal.F, nơi mỗi đóa hoa đều mang trong mình một câu chuyện. Chúng tôi
+                        không chỉ bán hoa, chúng tôi trao gửi những thông điệp yêu thương mà ngôn từ đôi khi chẳng thể
+                        diễn tả hết.</p>
+                    <p>Tại Resal.F, từng bông hoa được tuyển chọn kỹ lưỡng từ những vườn ươm tốt nhất, được nâng niu và
+                        chăm sóc để giữ trọn vẹn vẻ đẹp tươi mới. Đội ngũ Florist của chúng tôi với đôi bàn tay khéo léo
+                        và tâm hồn nghệ thuật sẽ biến những cành hoa đơn sơ thành những tác phẩm tuyệt đẹp.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <span class="feature-icon">🌿</span>
+                            <span>Hoa Tươi Trong Ngày</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🎨</span>
+                            <span>Thiết Kế Độc Đáo</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">💝</span>
+                            <span>Giao Gửi Yêu Thương</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Resal.F</h3>
+                <p>Mang vẻ đẹp thiên nhiên đến cuộc sống của bạn.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Liên Hệ</h3>
+                <p>Hotline: 1900 1234</p>
+                <p>Email: hello@resal-f.com</p>
+                <p>Địa chỉ: 123 Đường Hoa, Quận 1, TP.HCM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Resal.F. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

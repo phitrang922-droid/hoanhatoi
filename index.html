@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resal.F - Dịch Vụ Hoa Cao Cấp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Resal.F</div>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+            <a href="#home">Trang chủ</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="#products">Sản phẩm</a>
+            <a href="#styles">Kiểu bó</a>
+            <a href="order.html">Đặt hàng</a>
+            <a href="contact.html">Liên hệ</a>
+        </div>
+        <div class="navbar-right">
+            <div class="login-icon" id="login-icon" title="Đăng nhập">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+                    <polyline points="10 17 15 12 10 7"></polyline>
+                    <line x1="15" y1="12" x2="3" y2="12"></line>
+                </svg>
+            </div>
+            <div class="cart-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Login Modal -->
+    <div class="login-modal" id="login-modal">
+        <div class="login-modal-content">
+            <span class="login-close" id="login-close">&times;</span>
+            <h2>Đăng Nhập</h2>
+            <form id="login-form" class="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email *</label>
+                    <input type="email" id="login-email" name="email" required placeholder="your.email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Mật khẩu *</label>
+                    <input type="password" id="login-password" name="password" required placeholder="Nhập mật khẩu">
+                </div>
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" id="remember-me" name="remember">
+                        <span>Ghi nhớ đăng nhập</span>
+                    </label>
+                    <a href="#" class="forgot-password">Quên mật khẩu?</a>
+                </div>
+                <button type="submit" class="login-submit-button">Đăng Nhập</button>
+                <div class="login-divider">
+                    <span>Hoặc</span>
+                </div>
+                <p class="login-signup">
+                    Chưa có tài khoản? <a href="#" id="signup-link">Đăng ký ngay</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div class="login-modal" id="signup-modal">
+        <div class="login-modal-content">
+            <span class="login-close" id="signup-close">&times;</span>
+            <h2>Đăng Ký</h2>
+            <form id="signup-form" class="login-form">
+                <div class="form-group">
+                    <label for="signup-name">Họ và Tên *</label>
+                    <input type="text" id="signup-name" name="name" required placeholder="Nhập họ và tên">
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email *</label>
+                    <input type="email" id="signup-email" name="email" required placeholder="your.email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="signup-phone">Số Điện Thoại *</label>
+                    <input type="tel" id="signup-phone" name="phone" required placeholder="0123 456 789">
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Mật khẩu *</label>
+                    <input type="password" id="signup-password" name="password" required
+                        placeholder="Tối thiểu 6 ký tự">
+                </div>
+                <div class="form-group">
+                    <label for="signup-confirm-password">Xác nhận mật khẩu *</label>
+                    <input type="password" id="signup-confirm-password" name="confirm-password" required
+                        placeholder="Nhập lại mật khẩu">
+                </div>
+                <button type="submit" class="login-submit-button">Đăng Ký</button>
+                <p class="login-signup">
+                    Đã có tài khoản? <a href="#" id="login-link">Đăng nhập ngay</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Tinh Hoa Của Cảm Xúc</h1>
+            <p>Trao gửi yêu thương qua những đóa hoa tươi thắm nhất. Cửa hàng hoa tươi nơi bán những cảm xúc, nâng
+                niu niềm vui của bạn</p>
+            <a href="#products" class="cta-button">Khám Phá Ngay</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="products" class="section">
+            <div class="section-header">
+                <h2>Bộ Sưu Tập Hoa Tươi</h2>
+                <p>Những bông hoa được tuyển chọn kỹ lưỡng mỗi ngày</p>
+            </div>
+            <div class="flower-grid" id="flower-grid">
+                <!-- Products will be injected via JS -->
+            </div>
+        </section>
+
+        <section id="styles" class="section bg-light">
+            <div class="section-header">
+                <h2>Phong Cách Gói Hoa</h2>
+                <p>Lựa chọn phong cách phù hợp với cá tính của bạn</p>
+            </div>
+            <div class="style-grid" id="style-grid">
+                <!-- Styles will be injected via JS -->
+            </div>
+        </section>
+
+
+    </main>
+
+    <div class="summary-panel" id="summary-panel">
+        <div class="summary-content">
+            <div class="summary-details">
+                <h3>Đơn Hàng Của Bạn</h3>
+                <p id="selected-items">Chưa có hoa nào được chọn</p>
+                <p id="selected-style">Kiểu gói: Mặc định</p>
+            </div>
+            <div class="summary-total">
+                <span class="total-label">Tổng cộng:</span>
+                <span class="total-price" id="total-price">0₫</span>
+            </div>
+            <button class="checkout-button">Đặt Hàng Ngay</button>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h3>Resal.F</h3>
+                <p>Mang vẻ đẹp thiên nhiên đến cuộc sống của bạn.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Liên Hệ</h3>
+                <p>Hotline: 1900 1234</p>
+                <p>Email: hello@resal-f.com</p>
+                <p>Địa chỉ: 123 Đường Hoa, Quận 1, TP.HCM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Resal.F. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
